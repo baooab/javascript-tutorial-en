@@ -31,7 +31,7 @@ let timer = setInterval(function() {
   // how much time passed from the start?
   let timePassed = Date.now() - start;
 
-  if (timePassed >= 2000) {
+  if (timePassed > 2000) {
     clearInterval(timer); // finish the animation after 2 seconds
     return;
   }
